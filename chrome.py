@@ -8,7 +8,7 @@ def is_valid_file(arg):
     if os.path.isfile(arg):
         return os.path.abspath(arg)
     else:
-        raise argparse.ArgumentTypeError(
+        raise ap.ArgumentTypeError(
                 'Specified path does not exist or is not a file')
 
 
